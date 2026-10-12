@@ -108,7 +108,7 @@ def crear_tarea():
     datos = request.get_json()
     usuario_id = buscar_usuario(datos.get("usuario"))
     if usuario_id is None:
-        return jsonify({"error": "usuario inexistente"}), 400
+        return jsonify({"error": "usuario inexistente"}), 404
 
     conexion = sqlite3.connect(BASE)
     cursor = conexion.execute(
