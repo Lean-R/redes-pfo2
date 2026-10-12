@@ -1,0 +1,10 @@
+*.temp.md
+
+# entorno virtual
+venv/
+__pycache__/
+*.pyc
+
+# base de datos sqlite
+*.db
+*.sqlite3
